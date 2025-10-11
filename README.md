@@ -340,6 +340,9 @@ print("View:", view_arr)
 # Random & Extra Functions
 
 print("\nRandom normal distribution:\n", np.random.randn(2,2))
+
 print("Unique elements:", np.unique([1,2,2,3,3,3,4]))
+
 print("Sort:", np.sort([3,1,4,2]))
+
 print("Concatenate:", np.concatenate(([1,2,3],[4,5,6])))
