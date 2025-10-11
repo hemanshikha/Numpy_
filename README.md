@@ -9,7 +9,7 @@ It provides an n-dimensional array which is faster and more efficient than Pytho
  
     import Numpy as np
     
- • Creating NumPy Arraya
+ • Creating NumPy Arrays
  
 1. From Lists or Tuples
 
