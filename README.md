@@ -149,68 +149,197 @@ arr = np.array([10,20,30,40,50,60])
 
 print(np.split(arr, 3))   # Split into 3 equal parts
 
+
+
 Here is a code which includes all the functions of Numpy...
+
+
 
 import numpy as np
 
-# Array creation
 
-a = np.array([[1,2,3],[4,5,6]])
+# Array Creation
 
-b = np.arange(1,7).reshape(2,3)
+a = np.array([1, 2, 3, 4])
 
-# Basic info
+b = np.array([[5, 6, 7], [8, 9, 10]])
 
-print("Shape:", a.shape)
+print("a =", a)
 
-print("Dimensions:", a.ndim)
+print("b =\n", b)
 
-print("Data type:", a.dtype)
 
-# Mathematical operations
+# Built-in creation
 
-print("Sum:", np.sum(a))
+print("Zeros:\n", np.zeros((2,3)))
 
-print("Mean:", np.mean(a))
+print("Ones:\n", np.ones((2,3)))
 
-print("Max:", np.max(a))
+print("Arange:", np.arange(0,10,2))
 
-print("Min:", np.min(a))
+print("Linspace:", np.linspace(0,1,5))
 
-print("Standard Deviation:", np.std(a))
+print("Identity:\n", np.eye(3))
 
-# Element-wise operation
+print("Random Float:\n", np.random.rand(2,3))
 
-print("a+b:", a+b)
+print("Random Int:\n", np.random.randint(1,10,(2,3)))
 
-print("Square root:", np.sqrt(a))
 
-# Reshaping
 
-c = a.reshape(3,2)
+# Array Attributes
 
-print("Reshaped:\n", c)
+print("\nArray b ndim:", b.ndim)
+
+print("Array b shape:", b.shape)
+
+print("Array b size:", b.size)
+
+print("Array b dtype:", b.dtype)
+
+
+
+# Indexing and Slicing
+
+print("\nFirst element of a:", a[0])
+
+print("Slice of a[1:3]:", a[1:3])
+
+print("Element b[1,2]:", b[1,2])
+
+print("Second column of b:", b[:,1])
+
+
+
+# Mathematical Operations
+
+x = np.array([1,2,3])
+
+y = np.array([4,5,6])
+
+print("\nx + y =", x + y)
+
+print("x - y =", x - y)
+
+print("x * y =", x * y)
+
+print("x / y =", x / y)
+
+print("Square root of x:", np.sqrt(x))
+
+print("Exponent of x:", np.exp(x))
+
+print("Log of x:", np.log(x))
+
+print("Sin of x:", np.sin(x))
+
+
+#  Aggregate Functions
+
+
+arr = np.array([10, 20, 30, 40, 50])
+
+print("\nSum:", np.sum(arr))
+
+print("Min:", np.min(arr))
+
+print("Max:", np.max(arr))
+
+print("Mean:", np.mean(arr))
+
+print("Median:", np.median(arr))
+
+print("Std Dev:", np.std(arr))
+
+print("Variance:", np.var(arr))
+
+
+
+# Reshape and Flatten
+
+r = np.arange(1,7)
+
+reshaped = r.reshape(2,3)
+
+print("\nReshaped:\n", reshaped)
+
+print("Flattened:", reshaped.flatten())
+
+
 
 # Stacking
 
-v = np.vstack((a,b))
 
-h = np.hstack((a,b))
+p = np.array([[1,2],[3,4]])
 
-print("Vertical Stack:\n", v)
+q = np.array([[5,6],[7,8]])
 
-print("Horizontal Stack:\n", h)
+print("\nHorizontal Stack:\n", np.hstack((p,q)))
 
-# Matrix operations
+print("Vertical Stack:\n", np.vstack((p,q)))
 
-x = np.array([[1,2],[3,4]])
 
-y = np.array([[5,6],[7,8]])
 
-print("Dot Product:\n", np.dot(x,y))
+# Splitting
 
-print("Transpose:\n", np.transpose(x))
 
-print("Determinant:", np.linalg.det(x))
+s = np.array([10,20,30,40,50,60])
 
-print("Inverse:\n", np.linalg.inv(x))
+print("\nSplit into 3 parts:", np.split(s,3))
+
+
+
+#  Matrix Operations
+
+
+A = np.array([[1,2],[3,4]])
+
+B = np.array([[5,6],[7,8]])
+
+print("\nDot Product:\n", np.dot(A,B))
+
+print("Transpose:\n", np.transpose(A))
+
+print("Determinant:", np.linalg.det(A))
+
+print("Inverse:\n", np.linalg.inv(A))
+
+
+
+# Logical and Comparison
+
+
+c = np.array([1,2,3,4,5])
+
+print("\nc > 3:", c > 3)
+
+print("Any element > 3?", np.any(c > 3))
+
+print("All elements > 0?", np.all(c > 0))
+
+print("Where >3:", np.where(c > 3))
+
+
+# Copy vs View
+
+orig = np.array([10,20,30])
+
+copy_arr = orig.copy()
+
+view_arr = orig.view()
+
+orig[0] = 99
+
+print("\nOriginal:", orig)
+
+print("Copy:", copy_arr)
+
+print("View:", view_arr)
+
+
+# Random & Extra Functions
+
+print("\nRandom normal distribution:\n", np.random.randn(2,2))
+print("Unique elements:", np.unique([1,2,2,3,3,3,4]))
+print("Sort:", np.sort([3,1,4,2]))
+print("Concatenate:", np.concatenate(([1,2,3],[4,5,6])))
