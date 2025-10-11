@@ -346,3 +346,182 @@ print("Unique elements:", np.unique([1,2,2,3,3,3,4]))
 print("Sort:", np.sort([3,1,4,2]))
 
 print("Concatenate:", np.concatenate(([1,2,3],[4,5,6])))
+
+OUTPUT:
+
+a = [1 2 3 4]
+
+b =
+
+ [[ 5  6  7]
+ 
+  [ 8  9 10]]
+  
+Zeros:
+
+ [[0. 0. 0.]
+ 
+  [0. 0. 0.]]
+  
+Ones:
+
+ [[1. 1. 1.]
+ 
+  [1. 1. 1.]]
+  
+Arange: [0 2 4 6 8]
+
+Linspace: [0.   0.25 0.5  0.75 1.  ]
+
+Identity:
+
+ [[1. 0. 0.]
+ 
+  [0. 1. 0.]
+  
+  [0. 0. 1.]]
+  
+Random Float:
+
+ [[0.56 0.72 0.35]
+ 
+  [0.84 0.11 0.93]]
+  
+Random Int:
+
+ [[6 1 5]
+ 
+  [9 4 7]]
+  
+
+Array b ndim: 2
+
+Array b shape: (2, 3)
+
+Array b size: 6
+
+Array b dtype: int64
+
+
+First element of a: 1
+
+Slice of a[1:3]: [2 3]
+
+Element b[1,2]: 10
+
+Second column of b: [6 9]
+
+
+x + y = [5 7 9]
+
+x - y = [-3 -3 -3]
+
+x * y = [ 4 10 18]
+
+x / y = [0.25 0.4  0.5 ]
+
+Square root of x: [1.         1.41421356 1.73205081]
+
+Exponent of x: [ 2.71828183  7.3890561  20.08553692]
+
+Log of x: [0.         0.69314718 1.09861229]
+
+Sin of x: [0.84147098 0.90929743 0.14112001]
+
+
+Sum: 150
+
+Min: 10
+
+Max: 50
+
+Mean: 30.0
+
+Median: 30.0
+
+Std Dev: 14.1421356237
+
+Variance: 200.0
+
+
+Reshaped:
+
+ [[1 2 3]
+ 
+  [4 5 6]]
+  
+Flattened: [1 2 3 4 5 6]
+
+
+Horizontal Stack:
+
+ [[1 2 5 6]
+ 
+  [3 4 7 8]]
+  
+Vertical Stack:
+
+ [[1 2]
+ 
+  [3 4]
+  
+  [5 6]
+  
+  [7 8]]
+  
+
+Split into 3 parts: [array([10, 20]), array([30, 40]), array([50, 60])]
+
+
+Dot Product:
+
+ [[19 22]
+ 
+  [43 50]]
+  
+Transpose:
+
+ [[1 3]
+ 
+  [2 4]]
+  
+Determinant: -2.0000000000000004
+
+Inverse:
+
+ [[-2.   1. ]
+ 
+  [ 1.5 -0.5]]
+  
+
+c > 3: [False False False  True  True]
+
+Any element > 3? True
+
+All elements > 0? True
+
+Where >3: (array([3, 4]),)
+
+
+Original: [99 20 30]
+
+Copy: [10 20 30]
+
+View: [99 20 30]
+
+
+Random normal distribution:
+
+ [[ 0.65 -0.22]
+ 
+  [ 1.45 -0.81]]
+  
+Unique elements: [1 2 3 4]
+
+Sort: [1 2 3 4]
+
+Concatenate: [1 2 3 4 5 6]
+
+
+          ----------END--------------
+          
